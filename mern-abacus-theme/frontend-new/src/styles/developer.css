@@ -9,12 +9,13 @@
 }
 
 .developers h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 40px;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #444;
+    width: 100%;
 }
 
 .developers-carousel {

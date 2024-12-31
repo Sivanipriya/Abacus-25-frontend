@@ -2,6 +2,11 @@
 /* Global font styles */
 body {
   font-family: "Montserrat", sans-serif; /* Default font */
+
   overflow-x: hidden;
 }
+
+
+
+
 

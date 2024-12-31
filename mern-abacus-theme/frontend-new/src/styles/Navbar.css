@@ -2,9 +2,9 @@
 .animated-border-box-glow {
   overflow: hidden;
   z-index: 0;
-  border-radius: 20px; 
+  border-radius: 20px;
 }
-.animated-border-box:before{
+.animated-border-box:before {
   content: "";
   position: absolute;
   top: 50%;
@@ -21,7 +21,7 @@
     #f0f0f0 75%,
     transparent 100%
   );
-  animation: rotate 4s linear infinite; 
+  animation: rotate 4s linear infinite;
 }
 
 .animated-border-box:after {
@@ -32,7 +32,7 @@
   width: calc(100% - 10px);
   height: calc(100% - 10px);
   background: #292a2e;
-  border-radius: 10px; 
+  border-radius: 10px;
 }
 
 @keyframes rotate {

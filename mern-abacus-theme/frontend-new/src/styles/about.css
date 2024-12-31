@@ -79,26 +79,22 @@
 
 .div1{
   background-image: url('../assets/images/download.png');
-display: flex;
-height:inherit;
-justify-content: center;
-align-items: center;
-
+  display: flex;
+  height:inherit;
+  justify-content: center;
+  align-items: center;
 }
 
 .initial .theme{
   animation: ohyeah 2s infinite;
-  color: #8a2be2;
- 
-  font-family: Bruno Ace;
+  color: white;
   font-size: 26px;
   font-weight: 400;
   text-align: center;
   text-decoration: none;
-
-  
-
+  font-family: 'Rubik Vinyl', sans-serif;
 }
+
 
 
 .glow-button {
@@ -112,11 +108,11 @@ align-items: center;
   border: none;
   border-radius: 30px;
   padding: 10px 25px;
-  cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 10px rgba(138, 43, 226, 0.6);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
+
 .glow-button:hover{
 display: block;
 filter:drop-shadow(0 0 10px #fffdef)
@@ -232,7 +228,7 @@ right:0px;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 10px rgba(138, 43, 226, 0.6);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .second button:hover{
@@ -246,10 +242,7 @@ filter:drop-shadow(0 0 10px #fffdef)
   width:1500px;
 }
 
-@media (max-width:1800px)
-{
-  
-}
+
 
 @media(max-width:1400px)
 {
@@ -281,10 +274,14 @@ filter:drop-shadow(0 0 10px #fffdef)
     flex-direction: column;
 
   }
+  .theme{
+    margin-top: 20px;
+  }
   
 }
 
 @media (max-width:594px) {
+
   .main .initial .logo{
     height:15em;
    width:15em; 
@@ -303,12 +300,11 @@ filter:drop-shadow(0 0 10px #fffdef)
     border:1px solid black;
   }
   .initial .theme{
-    background-color: #f0f0f0;
+    background-color: black;
     color: black;
     font-size: 13px;
+    font-family: 'Monsterrat',sans-serif;
     border:1px solid black;
-  
-
   }
 
   .button{

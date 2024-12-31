@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import abacus_img from "../assets/images/logo.jpeg";
 
-const Navbar = () => {
+const Navbar = ({ isMenuOpen, setIsMenuOpen }) => {
   const [active, setActive] = useState("home");
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  //const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
     { name: "home", label: "/ home" },
@@ -17,9 +17,26 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  // useEffect(() => {
+  //   if (isMenuOpen) {
+  //     document.body.classList.add("overflow-hidden");
+  //   } else {
+  //     document.body.classList.remove("overflow-hidden");
+  //   }
+  // }, [isMenuOpen]);
+  
+
   return (
-    <div className="fixed top-0 w-screen flex flex-row justify-between px-5 py-2  text-white bg-gradient-to-r from-gray-950 via-gray-800 via-gray-700 to-gray-950 shadow-2xl z-50">
-      <div className="flex flex-row rounded-lg mx-4">
+    <div
+      className={`fixed top-0 left-0 w-screen flex flex-row justify-between  lg:px-5 lg:py-2  text-white bg-gradient-to-r from-gray-950 via-gray-800 via-gray-700 to-gray-950 shadow-2xl z-50 
+      ${isMenuOpen ? " overflow-hidden " : "visible"}
+    `}
+    >
+      <div
+        className={`flex flex-row rounded-lg mx-4   delay-200 transform ease-in-out ${
+          isMenuOpen ? " hidden " : "visible"
+        }`}
+      >
         <a href="#home">
           <img
             src={abacus_img}
@@ -34,7 +51,12 @@ const Navbar = () => {
         </a>
       </div>
 
-      <button className="lg:hidden p-2 text-white" onClick={toggleMenu}>
+      <button
+        className={`lg:hidden p-2 text-white ${
+          isMenuOpen ? " hidden " : "visible"
+        }`}
+        onClick={toggleMenu}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -54,7 +76,7 @@ const Navbar = () => {
       <div
         className={`flex lg:space-x-4 items-center justify-center overflow-hidden lg:static lg:transform-none flex-col lg:flex-row  lg:h-auto transition-transform duration-300 ease-in-out ${
           isMenuOpen
-            ? "block transform translate-x-0 bg-gradient-to-r from-gray-950 via-gray-800 via-gray-700 to-gray-950 lg:bg-transparent fixed top-0 left-0 w-screen h-screen"
+            ? "block transform translate-x-0 bg-gradient-to-r from-gray-950 via-gray-800 via-gray-700 to-gray-950 lg:bg-transparent fixed top-0 left-0 w-[70%] h-[70%] mx-[15%] my-[30%] rounded-2xl"
             : "transform -translate-x-full hidden lg:block my-auto"
         }`}
       >

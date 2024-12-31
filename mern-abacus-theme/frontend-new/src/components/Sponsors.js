@@ -13,7 +13,7 @@ const Sponsors = () => {
 
   return (
     <div className="bg-[#f0f0f0] p-6" id="sponsors">
-      <h1 className="text-5xl font-bold text-black text-center mb-8 overflow-hidden">
+      <h1 className="text-4xl font-bold text-black text-center mb-8 overflow-hidden">
         Sponsors
       </h1>
       <div className="flex flex-col justify-between lg:flex-row mx-auto overflow-clip bg-[#f0f0f0] w-[100%]">
