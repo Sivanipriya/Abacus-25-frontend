@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/about.css";
 import "../styles/global.css";
 import { Bubble } from "../components/Bubble";
