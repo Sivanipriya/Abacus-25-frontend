@@ -1,11 +1,8 @@
 import { useState, useEffect } from "react";
-import { useState, useEffect } from "react";
 import abacus_img from "../assets/images/logo.jpeg";
 
 const Navbar = ({ isMenuOpen, setIsMenuOpen }) => {
-const Navbar = ({ isMenuOpen, setIsMenuOpen }) => {
   const [active, setActive] = useState("home");
-  //const [isMenuOpen, setIsMenuOpen] = useState(false);
   //const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
@@ -19,15 +16,6 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen }) => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
-  // useEffect(() => {
-  //   if (isMenuOpen) {
-  //     document.body.classList.add("overflow-hidden");
-  //   } else {
-  //     document.body.classList.remove("overflow-hidden");
-  //   }
-  // }, [isMenuOpen]);
-  
 
   return (
     <div
@@ -55,12 +43,6 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen }) => {
         </a>
       </div>
 
-      <button
-        className={`lg:hidden p-2 text-white ${
-          isMenuOpen ? " hidden " : "visible"
-        }`}
-        onClick={toggleMenu}
-      >
       <button
         className={`lg:hidden p-2 text-white ${
           isMenuOpen ? " hidden " : "visible"
