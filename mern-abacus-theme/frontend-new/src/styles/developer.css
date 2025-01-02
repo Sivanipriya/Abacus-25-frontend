@@ -207,13 +207,12 @@
 }
 
 
-/* General styles for smaller screens */
 @media (max-width: 1200px) {
     .developers-carousel {
         gap: 20px;
     }
     .developer-card {
-        width: 30%;
+        width: 22%;
         padding: 20px;
     }
     .developer-card h3 {
@@ -225,6 +224,9 @@
     .developer-card img {
         width: 100px;
         height: 100px;
+    }
+    .carousel-button {
+        display: flex; /* Ensure the carousel buttons are visible */
     }
 }
 
@@ -258,6 +260,7 @@
         width: 40px;
         height: 40px;
         font-size: 1.2rem;
+        display: flex;
     }
 
     .carousel-button.left {
@@ -268,7 +271,6 @@
         right: 20px;
     }
 }
-
 
 /* Tablet-sized screens */
 @media (max-width: 768px) {
@@ -290,27 +292,31 @@
     }
 
     .developer-card {
-        width: 80%;
+        width: 45%;
         height: 350px;
         padding: 20px;
         box-sizing: border-box;
-        margin: 0;
+        margin: 0 10px;
         transform: translateX(0);
     }
 
     /* Hide the second card in the carousel */
-    .developer-card:nth-child(2) {
+    .developer-card:nth-child(3) {
+        display: none;
+    }
+    .developer-card:nth-child(4) {
         display: none;
     }
 
     .carousel-button {
-        font-size: 2rem;
+        font-size: 1.3rem;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        color: #333;
+        color: #fff;
         cursor: pointer;
         z-index: 10;
+        display: flex; /* Ensure the carousel buttons are visible */
     }
 
     .carousel-button.left {
@@ -354,15 +360,22 @@
     .developer-card:nth-child(2) {
         display: none;
     }
+    .developer-card:nth-child(3) {
+        display: none;
+    }
+    .developer-card:nth-child(4) {
+        display: none;
+    }
 
     .carousel-button {
-        font-size: 2rem;
+        font-size: 1.3rem;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        color: #333;
+        color: #fff;
         cursor: pointer;
         z-index: 10;
+        display: flex; /* Ensure the carousel buttons are visible */
     }
 
     .carousel-button.left {
@@ -373,6 +386,7 @@
         right: 10px;
     }
 }
+
 
 
 
