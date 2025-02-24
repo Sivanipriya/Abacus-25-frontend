@@ -14,12 +14,12 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen }) => {
   // All navigation items
   const navItems = [
     { name: "home", label: "Home", icon: <AiFillHome />, path: "/" },
-    // {
-    //   name: "sponsors",
-    //   label: "Sponsors",
-    //   icon: <FaHandshake />,
-    //   path: "/sponsors",
-    // },
+    {
+      name: "sponsors",
+      label: "Sponsors",
+      icon: <FaHandshake />,
+      path: "/individual-sponsors",
+    },
     { name: "events", label: "Events", icon: <MdEvent />, path: "/events" },
     {
       name: "workshops",
