@@ -22,6 +22,7 @@ import { LoaderData } from "./context/loaderContext";
 import Loader from "./components/Loader/Loader";
 import { useEffect } from "react";
 import BulkPayment from "./pages/BulkPayment";
+import IndividualSponsors from "./pages/IndividualSponsors";
 const App = () => {
   const { isMenuOpen, setIsMenuOpen } = UserData();
   const { isLoading, setIsLoading } = LoaderData();
@@ -65,6 +66,10 @@ const App = () => {
           <Route path="/" element={<EventPage />} />
           <Route path="/auth" element={<AuthPage />} />
           <Route path="/events/:id" element={<NoviceInit />} />
+          <Route
+            path="/individual-sponsors"
+            element={<IndividualSponsors />}
+          />
         </Routes>
       </Suspense>
     </BrowserRouter>

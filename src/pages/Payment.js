@@ -3,6 +3,7 @@ import { UserData } from "../context/userContext";
 import { useParams, useNavigate } from "react-router-dom";
 import { LoaderData } from "../context/loaderContext";
 import Loader from "../components/Loader/Loader";
+import img1 from "../assets/images/amazon.png";
 
 const Payment = () => {
   const navigate = useNavigate();
@@ -50,8 +51,8 @@ const Payment = () => {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center bg-black text-white p-5 relative mt-16 pt-6">
-      <div className="w-full max-w-md bg-gray-900 border-2 border-[#8a1818] rounded-lg shadow-lg p-6 md:p-8">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-black bg-opacity-90 text-white p-5 relative">
+      <div className="w-full max-w-md bg-black bg-opacity-60 border-2 border-[#8a1818] rounded-lg shadow-lg p-6 md:p-8 backdrop-blur-md">
         <h2 className="text-2xl md:text-3xl font-bold text-center border-b-2 border-[#8a1818] pb-2">
           <span className="text-[#8a1818]">&lt;</span> Individual Payment{" "}
           <span className="text-[#8a1818]">&gt;</span>
@@ -69,7 +70,7 @@ const Payment = () => {
           {isOpen && (
             <div className="flex justify-center">
               <img
-                src="path/to/qr-code.png"
+                src={img1}
                 alt="QR Code"
                 className="w-28 h-28 border-2 border-[#8a1818] rounded-md"
               />

@@ -41,7 +41,7 @@ const Home = ({scrollToContact}) => {
         >
           <div className="para">
             <h1 className="heading text-center">
-              Reach'25 "Ideas Converge and Possibilities Unfold"
+            ABACUS '25 “Ideas Converge and Possibilities Unfold”
             </h1>
             <p className="pres text-center text-white">
               Navigating the Future, One Innovation at a Time
@@ -86,9 +86,8 @@ const Home = ({scrollToContact}) => {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          Reach-2025
+          Abacus-2025
         </motion.h2>
-        <img src={require("../assets/Reach/Reach'25_logo_white.png")}></img>
         <motion.div
           className="about bg-transparent overflow-hidden"
           initial="hidden"

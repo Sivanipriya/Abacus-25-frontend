@@ -2,6 +2,8 @@ import React from "react";
 import spon1 from "../assets/Sponsors/spon11.jpg";
 import spon3 from "../assets/Sponsors/tmb.png";
 import e2w from "../assets/Reach/e2w.png";
+import IndividualSponsors from "../pages/IndividualSponsors";
+import { Link } from "react-router-dom";
 //import "../styles/Navbar.css";
 
 const Sponsors = () => {
@@ -43,11 +45,14 @@ const Sponsors = () => {
           </div>
         ))}
       </div>
-      {/* <div className=" w-[100%] flex justify-center mt-4">
-        <button className="mt-10 mb-6 px-6 py-4 bg-gradient-to-br from-red-300 via-red-500 to-red-800 text-white font-bold rounded-full shadow-lg hover:shadow-[0_0_10px_rgba(255,255,255,0.8)] transition-shadow focus:outline-none focus:shadow-[0_0_15px_rgba(255,223,47,0.8)]">
+      <div className=" w-[100%] flex justify-center mt-4">
+        <Link
+          to={"/individual-sponsors"}
+          className="mt-10 mb-6 px-6 py-4 bg-gradient-to-br from-red-300 via-red-500 to-red-800 text-white font-bold rounded-full shadow-lg hover:shadow-[0_0_10px_rgba(255,255,255,0.8)] transition-shadow focus:outline-none focus:shadow-[0_0_15px_rgba(255,223,47,0.8)]"
+        >
           Read More{" "}
-        </button>
-      </div> */}
+        </Link>
+      </div>
     </div>
   );
 };
